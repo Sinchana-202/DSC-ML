@@ -1,0 +1,10 @@
+from collections import Counter
+input()
+pairs = 0
+gloves = Counter(map(int,input().strip().split()))
+for i in gloves:
+    if i%2==0:
+        pairs+=int(i/2)
+    elif i>2:
+        pairs+=int(i//2)
+print(pairs)
